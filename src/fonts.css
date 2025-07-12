@@ -1,0 +1,28 @@
+/* -------- second font ---------------------- */
+@font-face {
+  font-family: "Inter-V";
+  src: url('/public/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf');
+}
+@font-face {
+  font-family: "InterTight-V";
+  src: url('/public/fonts/Inter_Tight/InterTight-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: "SourceSans3-V";
+  src: url('/public/fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf');
+}
+
+
+/* -------- third font ---------------------- */
+@font-face {
+  font-family: "Merriweather-V";
+  src: url('/public/fonts/Merriweather/Merriweather-VariableFont_opsz\,wdth\,wght.ttf');
+}
+@font-face {
+  font-family: "PlayfairDisplay-V";
+  src: url('/public/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: "CrimsonPro-V";
+  src: url('/public/fonts/Crimson_Pro/CrimsonPro-VariableFont_wght.ttf');
+}

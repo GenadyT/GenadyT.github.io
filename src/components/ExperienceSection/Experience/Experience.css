@@ -1,0 +1,45 @@
+.experience {
+  
+}
+
+.experience .position-row {
+  display: flex;
+    justify-content: space-between;
+}
+
+.experience .company-row {
+  margin-bottom: 0.4rem;
+}
+
+.experience .duties-row {
+  margin-bottom: 0.9rem;
+}
+
+.experience .position {
+  
+}
+
+.experience .experience-years {
+  display: inline-flex;
+    align-items: center;
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: var(--site-third-color);
+}
+
+.experience .company {
+  font-weight: bold;    
+    color: var(--site-fourth-color);
+    font-family: var(--site-third-font-family);
+    font-size: 16.1px;
+}
+
+.experience .duties-ul {
+  list-style-type: disc;
+    padding-left: 1.6rem;
+    padding-right: 1rem;
+}  
+
+  .experience .duties-ul li::marker {
+    color: #383838;
+  }

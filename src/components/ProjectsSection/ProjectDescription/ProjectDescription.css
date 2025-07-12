@@ -1,0 +1,12 @@
+.project-description-paragraph-title {
+  color: var(--site-third-color);
+    text-decoration: underline;
+}
+
+.parag-description-link {
+  text-decoration: underline !important;
+    color: rgba(79, 103, 26, 0.7);
+}
+  .parag-description-link:hover {
+    color: inherit !important;
+  }

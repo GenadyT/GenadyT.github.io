@@ -1,0 +1,7 @@
+.project-visual-element.project-visual-image {
+  width: 87%;
+    min-width: 14rem;
+    max-width: 15rem;
+    height: auto;
+    border-radius: 9px;
+}

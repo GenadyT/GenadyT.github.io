@@ -1,0 +1,27 @@
+.site-logo {
+  
+}
+
+.site-logo {
+  border-radius: 50%;
+}
+
+.site-logo .logo-symbol {
+  
+}
+
+.site-logo.shimmered {
+  animation: shimmering 2.8s linear infinite;
+  background: var(--shimm-dark);
+  background: linear-gradient(90deg, var(--shimm-light) 9%, var(--shimm-dark) 18%, var(--shimm-light) 31%);
+  background-size: 1300px 100%;
+}
+
+@keyframes shimmering {
+    0% {
+        background-position: -1300px 0;
+    }
+    100% {
+        background-position: 1300px 0;
+    }
+}

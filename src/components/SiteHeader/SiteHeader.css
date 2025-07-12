@@ -1,0 +1,129 @@
+.fixed-header {
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.site-header {
+  display: flex;
+  flex-direction: row;
+    align-items: center;
+    background-color: white;
+    padding: 7px 17px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.site-header .nav {
+  display: flex;
+  margin-left: auto;
+}  
+
+.site-header .nav .logo-nav {
+  margin-right: auto;
+    margin-left: 8px;
+}
+
+.site-header .nav .logo-nav img { 
+  width: 45px;
+  height: auto;
+}
+
+.site-header .nav .menu-links-list {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.menu-links-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+  .menu-links-list li {
+    display: inline;
+    margin-right: 1.6rem;
+  }
+
+    .menu-links-list li:last-child {
+      margin-right: 0.2rem;
+    }
+
+
+
+.site-header .nav .menu-link-cont {
+  display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 5px 3px 5px;
+    border-radius: 1px;
+}  
+
+  .site-header .nav .menu-link-cont:hover {
+    background-color: var(--shimm-dark);
+    color: var(--site-fourth-color);
+    cursor: pointer;
+  }
+
+.site-header .nav .menu-link {
+  font-family: var(--site-third-font-family);
+  font-weight: bold;
+  font-size: 16.3px;
+}
+ 
+
+.site-header .nav .menu-nav .menu-link.menu-link-active {
+  color: var(--site-fourth-color);
+}
+
+
+.hamburger-button {
+  display: none;
+}
+
+
+@media (max-width: 900px) {
+  .site-header .menu-links-list {
+    flex-direction: column;
+  }
+
+  .hamburger-button {
+    display: block;
+  }
+
+  .site-header .nav .menu-nav {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 9rem;
+    background-color: #f5f4f3;
+    padding-top: 88px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .site-header .nav .menu-nav.open {  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .site-header .nav .menu-nav.open .menu-links-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .site-header .menu-links-list li {
+    margin: auto;
+        margin-bottom: 1.5rem;
+  }
+    .site-header .menu-links-list li:last-child {
+      margin: auto;
+    }
+}

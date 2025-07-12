@@ -1,0 +1,17 @@
+.hamburger-react {
+  
+}
+
+.hamburger-react > div > div {  
+  height: 3px !important;
+}
+
+  .hamburger-react:hover > div {
+    color: var(--site-fourth-color);
+    background-color: var(--shimm-dark);
+  }
+
+.hamburger-react > div > div {
+  width: 30px !important;
+}
+

@@ -1,0 +1,40 @@
+.jump_page_to_top_button {
+  display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000;
+    bottom: 3%;
+    right: 3%;
+    width: 36px;
+    height: 36px;
+    line-height: 49px;
+    opacity: 0;
+    text-align: center;
+    border-radius: 3px;
+    transition-delay: 0.2s;
+}
+
+.jump_page_to_top_button > i {
+  display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-90deg);
+    font-family: var(--site-second-font-family);
+    font-size: 21px;
+    font-style: normal;
+}
+@media only screen and (max-height: 600px) and (orientation: landscape) {
+}
+
+.jump_page_to_top_button:hover {
+  cursor: pointer;
+}
+
+.jump_page_to_top_button:hover > i {
+      border-color: #742429;
+  }
+
+  .jump_page_to_top_button:active {
+      background-color: #fff;
+    }

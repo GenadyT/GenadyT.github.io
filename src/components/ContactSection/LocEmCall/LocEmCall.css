@@ -1,0 +1,35 @@
+.loc-em-call {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.loc-em-call-item {
+  display: flex;
+  align-items: center;
+  justify-content: left;  
+}
+
+.loc-em-call .contact-icon {
+  border: 2px solid;
+  color: var(--site-second-color);
+}
+
+.loc-em-call .contact-text {
+  margin-left: 0.5rem;
+}
+
+.loc-em-call ul > li {
+  margin-bottom: 1.1rem;
+}
+  .loc-em-call ul > li:last-child {
+    margin-bottom: 0;
+  }
+
+.loc-em-call .links-delimiter {
+  margin: 2rem 0;
+    /* margin-right: 5rem; */
+    border: 0;
+    border-top: 0.5px solid rgba(var(--site-first-color-o), 0.3);
+}

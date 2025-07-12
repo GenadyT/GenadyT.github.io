@@ -1,0 +1,56 @@
+footer {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.4rem;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem 2.4rem 1rem;
+    text-size-adjust: 100%;
+    margin-top: 14rem;
+    color: #000;
+}
+
+footer a:hover {
+  color: var(--site-fourth-color);
+}
+
+footer .copyright {
+  /*font-weight: bold;*/
+}
+
+footer .copyright_li {
+    line-height: 1.1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+footer .footer_delim {
+  color: var(--site-fourth-color);
+  font-weight: bold;
+}
+
+footer .love {
+  font-size: 1.3rem;
+}
+
+footer .footer_bullet {
+  color: var(--site-fourth-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+}
+
+footer .open_source {
+  color: var(--site-second-color);
+  font-weight: bold;
+}
+
+footer .open_source_on_gitHub {
+  font-family: var(--site-third-font-family) Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;    
+    text-decoration: underline !important;
+    text-underline-offset: 3px;
+}
+

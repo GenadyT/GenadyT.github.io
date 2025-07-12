@@ -1,0 +1,55 @@
+.page-section {
+    margin-bottom: 12rem;
+}
+  .page-section h2 {
+    position: relative;
+    padding-bottom: 17px;
+    margin-bottom: 4rem;
+    font-size: 2.2rem;
+    color: var(--site-second-color);
+}
+
+    .page-section h2::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: var(--site-fourth-color);
+      bottom: 0;
+      left: 0;
+    }
+
+.page-section-ul {
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+  gap: 2rem;
+}
+  .page-section-ul > li {
+    flex: 1 1;
+  }
+
+.page-section .page-section-content p {
+  margin-top: 0.0rem;
+    margin-bottom: 0;
+}
+
+.page-section .page-section-item {
+  width: 100%;
+    background-color: rgba(var(--site-first-color-o), 0.2);
+    background-color: #eff1ec;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 23px;
+    box-sizing: border-box;
+    box-shadow: 0 0 12px var(--box-shadow-color);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.page-section .page-section-item:hover {  
+  box-shadow: 0 0 16px var(--box-shadow-on-hover-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
