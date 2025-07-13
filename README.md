@@ -1,4 +1,4 @@
-## Rijksmuseum Web API
+## My Full-Stack Portfolio Website
 
 ### Project Topic
 
@@ -13,6 +13,6 @@ framework may be not bad idea.
 
 ### External links
 
-[Rijksmuseum](https://www.rijksmuseum.nl/en/about-us)
+[React Quick Start](https://react.dev/learn)
 
 
