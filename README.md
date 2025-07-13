@@ -2,14 +2,15 @@
 
 ### Project Topic
 
-Rijksmuseum API project includes webpages that consume the museum Web API <br/>
-and expose Rijksmuseum paintings, the paintings' artists list, and their info.
+During my job search, I often encountered requests from employers to provide <br/>
+my portfolio. I came to the conclusion that a portfolio website is a very important <br/>
+document for those who are looking for a full-stack developer position.
 
 ### Notes
 
-This projects' code is written in React framework. React is a good tool, <br/> 
-but my post work suggestions is that for too comprehensive code use Angular <br/> 
-framework may be not bad idea.
+This projects' code is written in React framework. I chose React because <br/>
+it helped me build fast, interactive, and reusable user interfaces for this <br/>
+website. 
 
 ### Personal Request
 
