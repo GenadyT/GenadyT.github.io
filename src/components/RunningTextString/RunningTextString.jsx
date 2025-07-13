@@ -1,110 +1,85 @@
-import { useRef } from "react";
+import { useEffect, useState } from "react";
+import './RunningTextString.css';
 
 
-function* rightRun(str) {
-  var length = 1; 
-
-  while (length <= str.length) {
-    yield str.substr(0, length);
-    length++;
+function* rightRunIterator(str) {
+  for (let i = 1; i <= str.length; i++ ) {
+    yield str.substring(0, i);
   }
 }
 
-function* leftRun(str) {
-  var index = str.length; 
-
-  while (index >= 0) {
-    yield str.substring(0, index);
-    index--;
+function* leftRunIterator(str) {
+  for (let i = str.length - 1; i >= 0; i--) {
+    yield str.substring(0, i);
   }
 }
 
 
-function* stringCharsIterator(textString) {
-  var iterator = rightRun(textString); 
-  iterator._sourceFunctionName = rightRun.name;
-  var result, yieldResult;
-  var prevValue = '';
+function stringCharsIterator(stringChars) {
+  var textStringRunIterator = rightRunIterator(stringChars); 
+  textStringRunIterator._sourceFunctionName = rightRunIterator.name;
+  var runIteratorPrev;
 
-  while (true) {
-    yieldResult = iterator.next();
-    if(!yieldResult.done) {
-      prevValue = yieldResult.value;
-      result = yieldResult.value;
-    } else {
-      result = prevValue;
-    }   
+  this.next = () => {
+    var runIteratorNext = textStringRunIterator.next();    
 
-    if (yieldResult.done) {
-      if(iterator._sourceFunctionName === 'rightRun') {
-        iterator = leftRun(textString);
-        iterator._sourceFunctionName = leftRun.name;
+    if(runIteratorNext.done) {
+      if(textStringRunIterator._sourceFunctionName === rightRunIterator.name) {
+        textStringRunIterator = leftRunIterator(stringChars);
+        textStringRunIterator._sourceFunctionName = leftRunIterator.name;
+        runIteratorNext = runIteratorPrev;
       } else {
-        iterator = rightRun(textString);
-        iterator._sourceFunctionName = rightRun.name;
-      }
+        textStringRunIterator = rightRunIterator(stringChars);
+        textStringRunIterator._sourceFunctionName = rightRunIterator.name;
+      }      
+    } else {
+      runIteratorPrev = runIteratorNext;
     }
 
-    yield result;
+    return runIteratorNext;
   }
 }
 
-
-function* arrayElementsIterator(stringArray) {
-  var index = 0; 
-
-  while (true) {
-    yield stringArray[index];
-
-    if (index < (stringArray.length - 1)) {
-      index++;
-    } else {
-      index = 0;
-    }
-  }
-}
-
-function delay(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-
-function* allStringsCharsIterator(stringArray) {
-  const stringArrayIterator = arrayElementsIterator(stringArray);
-
-  var stringForPrintChars = '';
-  var stringForPrint, stringCharsIter;
-
-  while (true) {
-    if(stringForPrintChars.length === 0) {
-      stringForPrint = stringArrayIterator.next().value;      
-      stringCharsIter = stringCharsIterator(stringForPrint);
-    }
-    
-    stringForPrintChars = stringCharsIter.next().value;    
-
-    if(stringForPrintChars === stringForPrint) {
-      for(let i=0; i<1000000000; i++) {
-        let j = i*2;
-      }
-      yield stringForPrintChars;
-    } else {
-      yield stringForPrintChars;
-    }
+function allStringsCharsIterator(stringChars) {
+  const objStringCharsIterator = new stringCharsIterator(stringChars);
+  
+  this.next = () => {
+    const stringForPrint = objStringCharsIterator.next();
+    return stringForPrint;
   }
 }
 
 
 export default function RunningTextString({stringArray}) {
-  const spanRef = useRef();
-  const iterator = allStringsCharsIterator(stringArray);
+  const [text, setText] = useState("");      
 
-  setInterval(() => {
-    let textContent = iterator.next().value;
-    spanRef.current.textContent = textContent;    
-  }, 200);
+  useEffect(() => {   
+    var iterateIndex = 0, textContent;
+    var iterator = new allStringsCharsIterator(stringArray[iterateIndex]);   
+
+    setInterval(() => {      
+      textContent = iterator.next().value;
+
+      if ((textContent === '') || (textContent === undefined)) {
+        if (iterateIndex < (stringArray.length - 1)) {
+          iterateIndex++;
+        } else {
+          iterateIndex = 0;
+        }
+        
+        iterator = new allStringsCharsIterator(stringArray[iterateIndex]);
+      }                         
+      
+      setText(textContent);
+
+    }, 500);
+  }, []);   
+
 
   return (
-    <span ref={spanRef} />
+    <span>
+      {text}
+      <span className="type-writer-cursor blink">|</span>
+    </span>
   )
 }

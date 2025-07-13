@@ -1,5 +1,5 @@
 import { RxExternalLink } from 'react-icons/rx';
-import LinkControl from '../LinkControl/LinkControl.jsx'; 
+import LinkControl from './LinkControl/LinkControl.jsx'; 
 
 
 export default function ResumeButton({}) {

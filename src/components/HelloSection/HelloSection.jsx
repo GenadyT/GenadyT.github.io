@@ -20,8 +20,8 @@ export default function HelloSection({proficSpecializations, about}) {
             <div className="typing">
               <h2 className='profic-specializations'>
                 <span className="typing-text noselect">
-                <RunningTextString stringArray={proficSpecializations} />
-                <span className="type-writer-cursor blink">|</span></span>
+                  <RunningTextString stringArray={proficSpecializations} />
+                </span>
               </h2>
             </div>
           </div>

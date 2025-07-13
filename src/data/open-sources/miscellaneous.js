@@ -1,5 +1,51 @@
 const Miscellaneous = [
   {
+    title: "My Portfolio",
+    name: "My Portfolio",
+    gitHubLink: process.env.REACT_APP_GitHub_Portfolio,
+    descriptionParagraphs: [
+      {
+        title: "Project Topic",
+        description: `During my job search, I often encountered requests from employers to provide
+my portfolio. I came to the conclusion that a portfolio website is a very important
+document for those who are looking for a full-stack developer position.`
+      },
+      {
+        title: "Notes",
+        description: `This projects' code is written in React framework. I chose React because
+it helped me build fast, interactive, and reusable user interfaces for portfolio
+website.`
+      }, 
+      {
+        title: "Special Packages",
+        description: `react-scroll, react-icons, @formspree/react, clsx, react-responsive-carousel,
+hamburger-react`
+      }, 
+      {
+        title: "Special Tools",
+        description: `Send Email: https://formspree.io/ email service`
+      }, 
+      /*{
+        title: "Personal Request",
+        description: `Dear visitors, I have a personal request for you: since this repository may be
+viewed by my potential employers, please do not open issues or request features
+for this repository 🙏`
+      },*/ 
+      {
+        title: 'External links',
+        links: [
+          {caption: "My Portfolio on GitHub", href: process.env.REACT_APP_GitHub_Portfolio}
+        ]
+      },      
+    ],
+    imageSrc: "public-projects/miscellaneous/My_GitHub_Portfolio.png",
+    imageStyle: {margin: "0", marginRight: "auto", marginLeft: "7%", maxWidth: "11rem", minWidth: "9rem" },
+    liveLink: null,
+    techStack: [
+      "React", "HTML5", "CSS3"
+    ]
+  },
+  {
     title: "Rijksmuseum Web API",
     name: "Rijksmuseum Web API",
     gitHubLink: "https://github.com/GenadyT/JavaScript--Consume-External-API/tree/main",

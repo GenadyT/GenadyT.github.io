@@ -3,7 +3,7 @@ import { Link, scrollSpy  } from 'react-scroll';
 import { useEffect, useState } from 'react';
 import SiteLogo from '../SiteLogo/SiteLogo';
 import HamburgerButton from './HamburgerButton/HamburgerButton'; 
-import ResumeButton from '../ResumeButton/ResumeButton';
+import ResumeButton from '../ResumeButton';
 
 
 const siteHeaderOffset = 170; /* site header offset */

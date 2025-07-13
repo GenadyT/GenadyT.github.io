@@ -1,0 +1,16 @@
+.type-writer-cursor {
+  color: var(--site-fourth-color);
+}
+
+.blink {
+  animation: blink-animation 0.8s steps(2, start) infinite;
+}
+
+@keyframes blink-animation {
+  0%, 100% {
+    visibility: visible;
+  }
+  50% {
+    visibility: hidden;
+  }
+}

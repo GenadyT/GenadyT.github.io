@@ -1,6 +1,10 @@
 :root {
   --site-header-offset: 170px;   /* site header offset */
 
+  /* ------- fonts --------- */
+  --site-second-font-family: 'Inter-V', sans-serif; /* eshe horoshi - Manrope-V */
+  --site-third-font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; /*Poppins, sans-serif;*/  
+
   /* ------- colors --------- */
   --site-first-color: #bcb9b5;
   --site-first-color-o: 197, 195, 191;
@@ -11,21 +15,10 @@
   --site-third-color-o: 61, 42, 42;
   --site-fourth-color: #ba630b;
   --site-fourth-color-o: 185, 93, 0;
-
-  /* ------- fonts --------- */
-  --site-second-font-family: 'Inter-V', sans-serif; /* eshe horoshi - Manrope-V */
-  --site-second-font-weight: 600;
-
-  --site-third-font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; /*Poppins, sans-serif;*/
-  
-
-  --link-as-button-border-color: #e5e5e3;
-
   --box-shadow-color: #c5c3bf;
-  --box-shadow-on-hover-color: #a4a19a;
-  
+  --box-shadow-on-hover-color: #a4a19a;  
   --shimm-dark: #E7F0CE;
-  --shimm-dark-0: 228, 241, 199;
+  --shimm-dark-o: 228, 241, 199;
   --shimm-light: rgba(246,246,246,1);
 }
 
@@ -73,7 +66,7 @@ input, textarea {
     border: 1px solid;
     border-color: #DADAD9;
     background-color: #edefe9;
-    box-shadow: 0 0 7px rgba(var(--shimm-dark-0), 0.9);
+    box-shadow: 0 0 7px rgba(var(--shimm-dark-o), 0.9);
     box-shadow: 0 0 7px rgba(var(--box-shadow-color), 0.75);
 }
   .paragraph-1st p {
