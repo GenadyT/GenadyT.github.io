@@ -9,7 +9,7 @@ document for those who are looking for a full-stack developer position.
 ### Notes
 
 This projects' code is written in React framework. I chose React because <br/>
-it helped me build fast, interactive, and reusable user interfaces for this <br/>
+it helped me build fast, interactive, and reusable user interfaces for portfolio <br/>
 website. 
 
 ### Personal Request
