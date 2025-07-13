@@ -12,7 +12,13 @@ This projects' code is written in React framework. I chose React because <br/>
 it helped me build fast, interactive, and reusable user interfaces for portfolio <br/>
 website. 
 
-### special Tools
+### Special Packages
+
+react-scroll, react-icons, @formspree/react, clsx, react-responsive-carousel, <br/>
+hamburger-react
+
+
+### Special Tools
 
 Send Email: https://formspree.io/ email service
 
