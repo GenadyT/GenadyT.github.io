@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.65a7adea.css",
-    "main.js": "/static/js/main.9c35ec34.js",
+    "main.css": "/static/css/main.9b602597.css",
+    "main.js": "/static/js/main.496ec9bd.js",
     "static/js/453.052877a7.chunk.js": "/static/js/453.052877a7.chunk.js",
     "static/media/Merriweather-VariableFont_opsz,wdth,wght.ttf": "/static/media/Merriweather-VariableFont_opsz,wdth,wght.ced0158e22c005fd30be.ttf",
     "static/media/Inter-VariableFont_opsz,wght.ttf": "/static/media/Inter-VariableFont_opsz,wght.e05c5f3d1fa6a3893d84.ttf",
@@ -10,12 +10,12 @@
     "static/media/PlayfairDisplay-VariableFont_wght.ttf": "/static/media/PlayfairDisplay-VariableFont_wght.6fb1338b42a1658eb1ee.ttf",
     "static/media/CrimsonPro-VariableFont_wght.ttf": "/static/media/CrimsonPro-VariableFont_wght.15e3c9c162c5040cc5a6.ttf",
     "index.html": "/index.html",
-    "main.65a7adea.css.map": "/static/css/main.65a7adea.css.map",
-    "main.9c35ec34.js.map": "/static/js/main.9c35ec34.js.map",
+    "main.9b602597.css.map": "/static/css/main.9b602597.css.map",
+    "main.496ec9bd.js.map": "/static/js/main.496ec9bd.js.map",
     "453.052877a7.chunk.js.map": "/static/js/453.052877a7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.65a7adea.css",
-    "static/js/main.9c35ec34.js"
+    "static/css/main.9b602597.css",
+    "static/js/main.496ec9bd.js"
   ]
 }
