@@ -54,7 +54,18 @@
 }
 
 .hello-sub-section .portrait-sec-sec {
-  padding-top: 0.6rem;
+  /*padding-top: 0.6rem; */
+    width: 24rem;
+    height: 24rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-style: solid; */
+    /* border-radius: 50%; */
+    /* background-color: #FFFFFF; */
+    background: transparent;
+    margin: 0;
+    margin-top: -1rem;
 }
 
 .hello-sub-section .contacten-sec-sec {
@@ -62,12 +73,23 @@
 }
 
 .hello-sub-section .portrait {
-  width: 18rem;
-    height: auto;
-    border: 1px solid #ceccc9;
-    box-shadow: 9px 9px #dbdfd3;
-    border-radius: 24px;
+  display: block;
+    width: 20.0rem;
+    height: 20.5rem;
+    /* border: 1px solid #ceccc9; */
+    /* box-shadow: 9px 9px #dbdfd3; */
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: #f0f6e0;
+    border-width: 4px;
+    box-sizing: border-box;
+    margin-top: -20px;
+    cursor: default;
 }
+
+  .hello-sub-section .portrait:hover {
+    border-color: rgba(var(--site-fourth-color-o), 0.85);
+  }
 
 .welcome-portrait {
   

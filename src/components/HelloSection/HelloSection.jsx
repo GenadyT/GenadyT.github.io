@@ -31,7 +31,7 @@ export default function HelloSection({proficSpecializations, about}) {
         </div>
         <div className='sec right-sec'>
           <div className='sec-sec portrait-sec-sec'>
-            <img  className='portrait welcome-portrait' src={ process.env.PUBLIC_URL + '/images/my-portrait.jpg' } />
+            <img  className='site-stone-1 portrait welcome-portrait' src={ process.env.PUBLIC_URL + '/images/my-portrait.jpg' } />
           </div>
           <div className='sec-sec contacten-sec-sec' style={{paddingLeft: '12px'}}>
             <SocialLinks links={PersonalInfo.socialLinks} dir="center" />
